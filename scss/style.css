@@ -23,6 +23,7 @@ body {
 .navbar {
   height: 60px;
   padding: 1rem 30px;
+  display: block;
 }
 .navbar .nav_wrapper {
   margin: 0;
@@ -42,6 +43,85 @@ body {
   display: none;
 }
 
+nav.mobile_navbar {
+  display: none;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(37, 43, 70, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s ease;
+}
+nav.mobile_navbar .nav_wrapper {
+  padding: 1rem 30px;
+}
+nav.mobile_navbar .nav_wrapper button.close_btn {
+  float: right;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+nav.mobile_navbar .nav_wrapper button.close_btn img {
+  width: 20px;
+  height: 20px;
+}
+nav.mobile_navbar .nav_wrapper .nav_links {
+  display: flex;
+  margin-top: 0;
+  padding: 1rem 30px;
+  list-style-type: none;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  min-height: 70vh;
+  transition: transform 0.3s ease-in;
+  z-index: 100;
+}
+nav.mobile_navbar .nav_wrapper li {
+  padding: 20px;
+  border-bottom: 1px solid rgb(145, 148, 161);
+}
+nav.mobile_navbar .nav_wrapper li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+nav.mobile_navbar .nav_wrapper button.nav_cta {
+  background-color: transparent;
+  margin-top: 20px;
+  border: 3px solid white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+}
+nav.mobile_navbar .nav_wrapper button.nav_cta a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+nav.mobile_navbar .nav_wrapper .socials {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+nav.mobile_navbar .nav_wrapper .socials a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
 section.hero .col-1 .img_wrapper {
   margin-top: 20%;
 }
@@ -56,7 +136,7 @@ section.hero .col-2 .text_content {
 }
 section.hero .col-2 .text_content h1 {
   font-size: 30px;
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
   text-align: center;
 }
 section.hero .col-2 .text_content p {
@@ -98,7 +178,7 @@ section.features {
 }
 section.features .col-1 h1 {
   font-size: 30px;
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
   text-align: center;
 }
 section.features .col-1 p {
@@ -142,7 +222,7 @@ section.features .tab button.active {
   background-color: white;
   border: none;
   border-bottom: #fa5757 4px solid;
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
 }
 section.features .tabcontent {
   display: none;
@@ -163,7 +243,7 @@ section.features .tabcontent .row .col-sm-6 .img_wrapper img {
   width: 100%;
 }
 section.features .tabcontent .row .col-sm-6 .text_content h1 {
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
   text-align: center;
   font-weight: 500;
 }
@@ -197,7 +277,7 @@ section.download_browsers {
 }
 section.download_browsers h1 {
   font-size: 28px;
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
   text-align: center;
 }
 section.download_browsers p {
@@ -232,7 +312,7 @@ section.download_browsers .card .img-wrapper .icon {
   width: 100%;
 }
 section.download_browsers .card h3 {
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -257,7 +337,7 @@ section.download_browsers .card .btn {
 
 section.FAQ h1 {
   font-size: 30px;
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
   text-align: center;
 }
 section.FAQ p {
@@ -269,7 +349,7 @@ section.FAQ p {
 }
 section.FAQ .accordion_wrapper .accordion {
   background-color: #fff;
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -283,7 +363,7 @@ section.FAQ .accordion_wrapper .accordion {
 }
 section.FAQ .accordion_wrapper .accordion.active {
   background-color: white;
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
 }
 section.FAQ .accordion_wrapper .accordion:after {
   content: "+";
@@ -371,7 +451,7 @@ section.subscription .row .col-sm-6 form input[type=email] {
   border: 0;
   border-radius: 4px;
   padding: 12px 20px;
-  color: hsl(229deg, 31%, 21%);
+  color: rgb(37, 43, 70);
   font-weight: 500;
 }
 section.subscription .row .col-sm-6 form input[type=email]:focus {
@@ -413,7 +493,7 @@ section.subscription .row .col-sm-6 form input[type=submit] {
 }
 
 footer.footer {
-  background-color: hsl(229deg, 31%, 21%);
+  background-color: rgb(37, 43, 70);
 }
 footer.footer .row {
   display: flex;
@@ -452,9 +532,13 @@ footer.footer .socials a {
 }
 
 @media (min-width: 800px) {
+  nav.mobile_navbar {
+    display: none;
+  }
   .navbar {
     height: 80px;
     padding: 1rem 80px;
+    display: block;
   }
   .navbar .nav_wrapper {
     display: flex;
@@ -481,7 +565,7 @@ footer.footer .socials a {
   }
   .navbar .nav_links li a {
     display: block;
-    color: hsl(229deg, 31%, 21%);
+    color: rgb(37, 43, 70);
     text-align: center;
     padding: 14px 16px;
     font-size: 14px;
@@ -530,7 +614,7 @@ footer.footer .socials a {
   }
   section.hero .col-2 .text_content h1 {
     font-size: 40px;
-    color: hsl(229deg, 31%, 21%);
+    color: rgb(37, 43, 70);
     text-align: left;
   }
   section.hero .col-2 .text_content p {
@@ -613,7 +697,7 @@ footer.footer .socials a {
     background-color: white;
     border: none;
     border-bottom: #fa5757 4px solid;
-    color: hsl(229deg, 31%, 21%);
+    color: rgb(37, 43, 70);
   }
   section.features .row .col-2 .tabcontent {
     display: none;
@@ -650,7 +734,7 @@ footer.footer .socials a {
   }
   section.download_browsers h1 {
     font-size: 30px;
-    color: hsl(229deg, 31%, 21%);
+    color: rgb(37, 43, 70);
     text-align: center;
   }
   section.download_browsers p {
