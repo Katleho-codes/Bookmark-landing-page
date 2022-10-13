@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 *,
 *::before,
@@ -366,14 +365,15 @@ section.FAQ .accordion_wrapper .accordion.active {
   color: rgb(37, 43, 70);
 }
 section.FAQ .accordion_wrapper .accordion:after {
-  content: "+";
+  content: url("../images/icon-arrow.svg");
   color: rgb(83, 104, 223);
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 section.FAQ .accordion_wrapper .active:after {
-  content: "−";
+  content: url("../images/icon-arrow.svg");
+  transform: rotate(180deg);
   color: #fa5757;
 }
 section.FAQ .accordion_wrapper .panel {

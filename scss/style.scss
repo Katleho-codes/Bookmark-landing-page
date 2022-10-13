@@ -457,7 +457,7 @@ section.FAQ {
         }
 
         .accordion:after {
-            content: '\002B';
+            content: url("../images/icon-arrow.svg");
             color: $SoftBlue;
             font-weight: bold;
             float: right;
@@ -465,7 +465,8 @@ section.FAQ {
         }
 
         .active:after {
-            content: "\2212";
+            content: url("../images/icon-arrow.svg");
+            transform: rotate(180deg);
             color: $SoftRed;
         }
 
