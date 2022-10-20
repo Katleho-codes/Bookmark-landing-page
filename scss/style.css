@@ -594,9 +594,10 @@ footer.footer .socials a {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 5%;
+    padding-inline: 2rem;
   }
   section.hero .col-md-6 {
-    flex: 50%;
+    flex: 40%;
   }
   section.hero .col-1 .img_wrapper {
     margin-top: 0;
@@ -651,6 +652,7 @@ footer.footer .socials a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-inline: auto;
   }
   section.features .row .col-1 {
     width: 50%;
@@ -675,6 +677,8 @@ footer.footer .socials a {
     background-color: white;
     border: none;
     border-bottom: #ccc 1px solid;
+    width: 80%;
+    margin-inline: auto;
   }
   section.features .row .col-2 .tab button {
     background-color: inherit;
@@ -771,7 +775,7 @@ section.download_browsers .btn:hover {
     transition: 0.2s;
   }
   section.FAQ {
-    margin-top: 100px;
+    margin: 100px auto;
   }
   section.FAQ p {
     text-align: center;
@@ -784,6 +788,9 @@ section.download_browsers .btn:hover {
     justify-content: space-between;
     width: 50%;
     margin: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 10px;
   }
   section.FAQ .accordion_wrapper .panel {
     padding: 0 18px;

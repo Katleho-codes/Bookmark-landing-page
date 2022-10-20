@@ -724,10 +724,11 @@ footer.footer {
             display: flex;
             flex-direction: row-reverse;
             margin-top: 5%;
+            padding-inline: 2rem;
         }
 
         .col-md-6 {
-            flex: 50%;
+            flex: 40%;
         }
 
         .col-1 .img_wrapper {
@@ -793,6 +794,7 @@ footer.footer {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            margin-inline: auto;
 
             .col-1 {
                 width: 50%;
@@ -816,6 +818,8 @@ footer.footer {
                     background-color: white;
                     border: none;
                     border-bottom: #ccc 1px solid;
+                    width: 80%;
+                    margin-inline: auto;
                 }
 
                 .tab button {
@@ -940,7 +944,7 @@ footer.footer {
     }
 
     section.FAQ {
-        margin-top: 100px;
+        margin: 100px auto;
 
         p {
             text-align: center;
@@ -954,6 +958,9 @@ footer.footer {
                 justify-content: space-between;
                 width: 50%;
                 margin: auto;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 10px;
             }
 
             .panel {
